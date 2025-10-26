@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CXM-1D • Charting Averages — Colour Codes (v1.2.3-a)</title>
+<style>
+  :root{
+    --bg:#0b0e11; --card:#12161b; --ink:#e9ecef; --muted:#aab2bd; --line:rgba(255,255,255,0.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); font:14px/1.45 Inter, Roboto, Arial, system-ui, -apple-system, Segoe UI, sans-serif; padding:24px}
+  .wrap{max-width:920px; margin:0 auto}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; box-shadow:0 10px 28px rgba(0,0,0,.35)}
+  .head{padding:18px 22px; border-bottom:1px solid var(--line); background:linear-gradient(90deg, rgba(255,127,0,.12), rgba(106,13,173,.08))}
+  .h1{font-weight:800; font-size:18px; letter-spacing:.2px; margin:0 0 8px}
+  .row{display:flex; gap:10px; flex-wrap:wrap}
+  .tag{border:1px solid var(--line); padding:6px 10px; border-radius:999px; color:var(--muted); background:#0f1419}
+  .body{padding:18px 22px}
+  .grid{display:grid; grid-template-columns: 160px 260px 1fr; gap:12px; align-items:center}
+  .grid > div{padding:6px 0}
+  .grid.hdr{color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; border-bottom:1px solid var(--line); margin-bottom:6px}
+  .swatch{height:34px; border-radius:8px; border:1px solid rgba(255,255,255,.18); box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 2px 6px rgba(0,0,0,.45)}
+  code{background:#0f1419; border:1px solid var(--line); padding:2px 6px; border-radius:6px}
+  .foot{padding:14px 22px; border-top:1px solid var(--line); color:var(--muted); font-size:12px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="head" role="banner" aria-label="CXM-1D Colour Codes for Charting Averages">
+        <h1 class="h1">CXM-1D — Colour Codes for Charting Averages</h1>
+        <div class="row">
+          <div class="tag">Build: <strong>v1.2.3-a</strong></div>
+          <div class="tag">RPI + ± 1% Double-Top Gate</div>
+          <div class="tag">Primary TF: 1-Min Heikin Ashi</div>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="grid hdr" aria-hidden="true">
+          <div>Line / Indicator</div><div>Hex · RGB (with swatch)</div><div>Purpose</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>RVWAP</strong></div>
+          <div>
+            <div class="swatch" style="background:#FF7F00"></div>
+            <div style="margin-top:6px"><code>#FF7F00</code> • <code>rgb(255,127,0)</code></div>
+          </div>
+          <div>Volume-weighted mean anchor</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>MA 20</strong></div>
+          <div>
+            <div class="swatch" style="background:#FFD300"></div>
+            <div style="margin-top:6px"><code>#FFD300</code> • <code>rgb(255,211,0)</code></div>
+          </div>
+          <div>Centre-dip expansion guide</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>SMA 30</strong></div>
+          <div>
+            <div class="swatch" style="background:#D8D8D8"></div>
+            <div style="margin-top:6px"><code>#D8D8D8</code> • <code>rgb(216,216,216)</code></div>
+          </div>
+          <div>Neutral curvature check</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>MA 50</strong></div>
+          <div>
+            <div class="swatch" style="background:#00BFFF"></div>
+            <div style="margin-top:6px"><code>#00BFFF</code> • <code>rgb(0,191,255)</code></div>
+          </div>
+          <div>Mid-trend support</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>EMA 55</strong></div>
+          <div>
+            <div class="swatch" style="background:#FF0000"></div>
+            <div style="margin-top:6px"><code>#FF0000</code> • <code>rgb(255,0,0)</code></div>
+          </div>
+          <div>Exhaustion confirmation cross</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>MA 100</strong></div>
+          <div>
+            <div class="swatch" style="background:#E67E22"></div>
+            <div style="margin-top:6px"><code>#E67E22</code> • <code>rgb(230,126,34)</code></div>
+          </div>
+          <div>Secondary trend reference</div>
+        </div>
+
+        <div class="grid">
+          <div><strong>MA 200</strong></div>
+          <div>
+            <div class="swatch" style="background:#6A0DAD"></div>
+            <div style="margin-top:6px"><code>#6A0DAD</code> • <code>rgb(106,13,173)</code></div>
+          </div>
+          <div>Macro bias boundary</div>
+        </div>
+      </div>
+
+      <div class="foot">
+        Load check: If build and palette match, CXM-1D is initialised for 1‑min snapshot evaluation.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
