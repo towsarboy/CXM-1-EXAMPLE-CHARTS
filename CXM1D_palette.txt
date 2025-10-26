@@ -1,0 +1,13 @@
+# CXM-1D Dual-Peak Exhaustion – Indicator Colour Reference
+# Version: v1.2.3-a
+# Each line: <indicator> = <hex colour>
+
+RVWAP = #FF7F00
+MA20  = #FFD300
+MA30  = #D8D8D8
+MA50  = #00BFFF
+EMA55 = #FF0000
+MA100 = #E67E22
+MA200 = #6A0DAD
+
+# End of file
