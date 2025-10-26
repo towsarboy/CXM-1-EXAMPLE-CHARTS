@@ -1,0 +1,74 @@
+🧩 1. TradingView
+🎨 Manual setup (fastest)
+
+Open any chart → click the indicator settings (⚙️) next to your moving average or VWAP.
+
+Go to the “Style” tab.
+
+For each line:
+
+RVWAP → #FF6B6B
+
+MA20 → #1E90FF
+
+SMA30 → #00C853
+
+MA50 → #FFA000
+
+EMA55 → #7E57C2
+
+MA100 → #00ACC1
+
+MA200 → #808080
+
+RSI(14) → #F06292
+
+Adjust line thickness: RVWAP = thickest; MA20 = medium; others = fine.
+
+Click Save as Default (bottom left of the settings window).
+
+🧠 Tip
+
+If you have multiple MAs on one indicator, label them in the script:
+
+plot(ma20, color=color.new(#1E90FF, 0), title="MA20")
+plot(ma50, color=color.new(#FFA000, 0), title="MA50")
+
+⚙️ 2. ThinkorSwim (TOS)
+
+Go to Studies → Edit Studies → MovingAverage (or VWAP).
+
+Click the coloured box beside the study → paste the HEX (e.g., #FF6B6B).
+
+Repeat for each line.
+
+Click Save Study Set → Set as default.
+
+TOS remembers exact RGB/HEX, so you’ll never need to redo them once saved.
+
+💻 3. NinjaTrader / Sierra Chart
+
+Both let you right-click an indicator → Properties → Color → manually enter the HEX or RGB.
+
+If HEX isn’t accepted, convert to RGB:
+
+Colour	RGB
+#FF6B6B	255, 107, 107
+#1E90FF	30, 144, 255
+#00C853	0, 200, 83
+#FFA000	255, 160, 0
+#7E57C2	126, 87, 194
+#00ACC1	0, 172, 193
+#808080	128, 128, 128
+#F06292	240, 98, 146
+📦 4. MetaTrader 4/5
+
+Open Indicators List → Edit → Colors tab.
+
+Double-click a line → paste the HEX (some builds only show RGB).
+
+To convert:
+Example — #1E90FF → R=30, G=144, B=255.
+
+Save as a Template once colours are correct:
+Charts → Template → Save Template → CXM1.tpl
